@@ -10,7 +10,6 @@ import {
 import { auth, db } from '../services/firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
-import logoPrincipal from '../assets/images/logoprincipal.png';
 
 interface AuthScreenProps {
   onLogin: (user: User) => void;
@@ -451,7 +450,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({
   // PRELOAD LOGO
   React.useEffect(() => {
       const img = new Image();
-      img.src = logoPrincipal;
+      img.src = "/images/logoprincipal.png";
       img.onload = () => {
           // Pequeño delay para transición suave
           setTimeout(() => setIsLogoLoaded(true), 800);
@@ -497,7 +496,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({
 
             {!logoError ? (
                 <img 
-                    src={logoPrincipal} 
+                    src="/images/logoprincipal.png" 
                     alt="VentoDrive" 
                     className="relative z-10 w-80 md:w-96 h-auto object-contain hover:scale-105 transition-transform duration-500"
                     onError={(e) => {

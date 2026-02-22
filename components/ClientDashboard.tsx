@@ -10,7 +10,6 @@ import ChatWindow from './ChatWindow';
 import { searchAddress, calculateRealRoute, getDistanceKm } from '../services/mapService';
 import { updateDoc, doc } from 'firebase/firestore';
 import { db } from '../services/firebase';
-import logoSecundario from '../assets/images/logosecundario.png';
 
 interface ClientDashboardProps {
   user: User;
@@ -498,7 +497,7 @@ const ClientDashboard: React.FC<ClientDashboardProps> = ({
         <div className="bg-white/95 dark:bg-slate-900/90 backdrop-blur rounded-full px-4 py-1.5 border dark:border-slate-700 shadow-xl flex items-center gap-2 pointer-events-auto">
              {!logoError ? (
                  <img 
-                    src={logoSecundario} 
+                    src="/images/logosecundario.png" 
                     alt="VentoDrive" 
                     className="h-7 w-auto object-contain" 
                     onError={() => setLogoError(true)}
