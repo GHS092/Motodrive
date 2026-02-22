@@ -1018,7 +1018,7 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ drivers, clients = [], 
                     </div>
                 </div>
 
-                <div className="sticky bottom-0 bg-slate-900 pt-4 pb-2 border-t border-slate-800">
+                <div className="mt-6 pt-6 border-t border-slate-800">
                     <button onClick={saveSettings} className="w-full bg-yellow-400 text-black font-bold py-4 rounded-xl hover:bg-yellow-300 shadow-lg shadow-yellow-400/20 active:scale-95 transition-transform">
                         GUARDAR CONFIGURACIÓN
                     </button>
