@@ -46,13 +46,13 @@ import { getAnalytics } from "firebase/analytics";
  */
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBTwvufTL-TSq6FAvOTQvg7atzNjjzmznA",
-  authDomain: "taxi-moto-b3b1f.firebaseapp.com",
-  projectId: "taxi-moto-b3b1f",
-  storageBucket: "taxi-moto-b3b1f.firebasestorage.app",
-  messagingSenderId: "889432749814",
-  appId: "1:889432749814:web:47d5c2a79a5f35561f1ed7",
-  measurementId: "G-TN6GKRGM8Z"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyBTwvufTL-TSq6FAvOTQvg7atzNjjzmznA",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "taxi-moto-b3b1f.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "taxi-moto-b3b1f",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "taxi-moto-b3b1f.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "889432749814",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:889432749814:web:47d5c2a79a5f35561f1ed7",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-TN6GKRGM8Z"
 };
 
 const app = initializeApp(firebaseConfig);
