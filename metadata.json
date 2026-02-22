@@ -1,0 +1,7 @@
+{
+  "name": "VentoDrive Funcional 21",
+  "description": "Una aplicación premium de taxi en moto que conecta a pasajeros con conductores de motos lineales y deportivas para un transporte rápido y exclusivo.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
