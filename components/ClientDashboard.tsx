@@ -438,8 +438,8 @@ const ClientDashboard: React.FC<ClientDashboardProps> = ({
   };
 
   return (
-    <div className={`${isDarkMode ? 'dark' : ''} relative w-full h-screen overflow-hidden`}>
-    <div className="relative w-full h-screen bg-slate-50 overflow-hidden transition-colors duration-300">
+    <div className={`${isDarkMode ? 'dark' : ''} relative w-full h-[100dvh] overflow-hidden`}>
+    <div className="relative w-full h-full bg-slate-50 overflow-hidden transition-colors duration-300">
       
       {/* Top Bar */}
       <div className="absolute top-0 left-0 right-0 z-50 p-4 flex justify-between items-center pointer-events-none">
@@ -802,7 +802,8 @@ const ClientDashboard: React.FC<ClientDashboardProps> = ({
             transition-all duration-500 cubic-bezier(0.32, 0.72, 0, 1)
             flex flex-col
             ${viewingDriver && appState === AppState.IDLE ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'}
-            ${isPanelCollapsed ? 'max-h-28 overflow-hidden' : 'max-h-[85vh] overflow-y-auto'}
+            ${isPanelCollapsed ? 'max-h-28 overflow-hidden' : 'max-h-[85dvh] overflow-y-auto'}
+            pb-10 md:pb-0
         `}
       >
           {/* Handle de arrastre */}

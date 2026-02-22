@@ -489,8 +489,8 @@ const DriverDashboard: React.FC<DriverDashboardProps> = ({
 
 
   return (
-    <div className={`${isDarkMode ? 'dark' : ''} relative w-full h-screen overflow-hidden`}>
-    <div className="relative w-full h-screen bg-slate-50 overflow-hidden transition-colors duration-300">
+    <div className={`${isDarkMode ? 'dark' : ''} relative w-full h-[100dvh] overflow-hidden`}>
+    <div className="relative w-full h-full bg-slate-50 overflow-hidden transition-colors duration-300">
       {/* Header Conductor */}
       <div className="absolute top-0 w-full z-50 p-4 pointer-events-none">
         <div className="flex justify-between items-start pointer-events-auto">
@@ -579,7 +579,7 @@ const DriverDashboard: React.FC<DriverDashboardProps> = ({
       </div>
 
       {/* Botonera Inferior Flotante (Overlay Absolute) */}
-      <div className="absolute bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 rounded-t-[2.5rem] p-6 pb-6 shadow-[0_-20px_40px_rgba(0,0,0,0.1)] transition-colors duration-300 max-h-[75vh] flex flex-col">
+      <div className="absolute bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 rounded-t-[2.5rem] p-6 pb-10 md:pb-6 shadow-[0_-20px_40px_rgba(0,0,0,0.1)] transition-colors duration-300 max-h-[75dvh] flex flex-col">
         
         {/* --- PANEL DE ESPERA Y MERCADO DE VIAJES (SI NO HAY VIAJE ACTIVO/PENDIENTE) --- */}
         {!hasPendingRequest && !hasActiveTrip && (
