@@ -497,7 +497,7 @@ const ClientDashboard: React.FC<ClientDashboardProps> = ({
         <div className="bg-white/95 dark:bg-slate-900/90 backdrop-blur rounded-full px-4 py-1.5 border dark:border-slate-700 shadow-xl flex items-center gap-2 pointer-events-auto">
              {!logoError ? (
                  <img 
-                    src="/images/logosecundario.png" 
+                    src="https://i.ibb.co/xthwV3WP/Vento-Drive2.png" 
                     alt="VentoDrive" 
                     className="h-7 w-auto object-contain" 
                     onError={() => setLogoError(true)}

@@ -450,7 +450,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({
   // PRELOAD LOGO
   React.useEffect(() => {
       const img = new Image();
-      img.src = "/images/logoprincipal.png";
+      img.src = "https://i.ibb.co/twY8RDmf/ventodrive.png";
       img.onload = () => {
           // Pequeño delay para transición suave
           setTimeout(() => setIsLogoLoaded(true), 800);
@@ -496,7 +496,7 @@ const AuthScreen: React.FC<AuthScreenProps> = ({
 
             {!logoError ? (
                 <img 
-                    src="/images/logoprincipal.png" 
+                    src="https://i.ibb.co/twY8RDmf/ventodrive.png" 
                     alt="VentoDrive" 
                     className="relative z-10 w-80 md:w-96 h-auto object-contain hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
