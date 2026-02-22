@@ -527,7 +527,7 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ drivers, clients = [], 
   );
 
   return (
-    <div className="h-screen bg-slate-950 text-white flex flex-col overflow-hidden relative">
+    <div className="h-[100dvh] bg-slate-950 text-white flex flex-col overflow-hidden relative">
       {/* Header */}
       <div className="bg-slate-900 border-b border-slate-800 p-4 flex justify-between items-center shrink-0 z-40">
         <div>
@@ -566,7 +566,7 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ drivers, clients = [], 
       </div>
 
       {/* Content */}
-      <div className="flex-1 p-4 max-w-5xl mx-auto w-full overflow-y-auto no-scrollbar">
+      <div className="flex-1 p-4 pb-24 max-w-5xl mx-auto w-full overflow-y-auto no-scrollbar">
         
         {/* TAB: DRIVERS */}
         {activeTab === 'DRIVERS' && (
